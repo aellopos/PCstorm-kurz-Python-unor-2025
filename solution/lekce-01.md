@@ -21,7 +21,7 @@ print(f"{nazev} - {cas}")
 
 hodina = 19
 minuta = 30
-print(f"{nazev} - {hodina}:{minuta:02d}")
+print(f"{nazev} - {hodina}:{minuta}")
 ```
 
 </details>
