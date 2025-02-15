@@ -11,7 +11,12 @@ Na konec programu vlož příkaz, který se uživatele zeptá na věk. Pokud je 
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+uzivatelske_jmeno = input("Zadejte uživatelské jméno: ")
+heslo = input("Zadejte heslo: ")
+
+if heslo != "simsalabim":
+    print("Vstup nepovolen")
+    exit()
 ```
 
 </details>
@@ -45,7 +50,17 @@ Založte si program **registrace.py**. Program nechá uživatele, aby si zvolil 
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+uzivatelske_jmeno = input("Zadejte uživatelské jméno: ")
+heslo1 = input("Zadejte heslo: ")
+
+if len(heslo1) > 8:
+    heslo2 = input("Zadejte heslo znovu pro potvrzení: ")
+    if heslo1 == heslo2:
+        print("Registrace úspěšná. Vítejte, " + uzivatelske_jmeno + "!")
+    else:
+        print("Hesla nejsou stejná. Zkuste to znovu.")
+else:
+    print("Heslo musí být delší než 8 znaků.")
 ```
 
 </details>
