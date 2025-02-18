@@ -8,7 +8,12 @@ Vytvořte nový program **jmeno.py**. Do proměnné jmeno uložte svoje celé jm
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+jmeno = "František Novák"
+
+print(f"Třetí znak: {jmeno[2]}")  # 'a'
+print(f"Pátý znak: {jmeno[4]}")  # 't'
+print(f"Sedmý znak: {jmeno[6]}")  # 'š'
+
 ```
 
 
@@ -25,7 +30,18 @@ Vytvořte nový program **seznam.py**. V tomto programu vytvořte následující
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+divaci = [120, 150, 130, 145, 160]
+zaplnenost = [0.9, 0.85, 0.95, 0.80, 0.75]
+hry = ["Hamlet", "Romeo a Julie", "Válka s mloky", "Faust", "Othello"]
+druha_hra = hry[1]  # "Romeo a Julie"
+
+hodnoceni = [
+    ["Divadelní noviny", 8],
+    ["Scéna", 7],
+    ["Kultura21", 9],
+    ["Theatrolog", 6]
+]
+
 ```
 
 </details>
@@ -37,7 +53,17 @@ Založte si program **heslo.py**. Ověřování hesla se někdy dělá tak, že 
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+heslo = "bezpecneHeslo123"
+
+druhy_znak = input("Zadejte druhý znak vašeho hesla: ")
+paty_znak = input("Zadejte pátý znak vašeho hesla: ")
+sedmy_znak = input("Zadejte sedmý znak vašeho hesla: ")
+
+if (druhy_znak == heslo[1] and paty_znak == heslo[4] and sedmy_znak == heslo[6]):
+    print("Heslo ověřeno, vstup povolen.")
+else:
+    print("Nesprávné znaky, vstup nepovolen.")
+
 ```
 
 </details>
