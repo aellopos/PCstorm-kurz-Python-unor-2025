@@ -37,7 +37,20 @@ Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.
 <summary><b>Řešení</b></summary>
 
 ```Python
-Tady zatím nic není :)
+plnaCena = 12
+
+vek = int(input("Zadejte svůj věk: "))
+
+if vek < 6:
+    cena = 0
+elif vek <= 26:
+    cena = round(0.65 * plnaCena, 2)
+elif ek <= 64:
+    cena = plnaCena
+else:
+    cena = round(0.5 * plnaCena, 2)
+
+print(f"Cena vaší vstupenky je {cena} euro. Děkujeme za nákup!")
 ```
 
 </details>

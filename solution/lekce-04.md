@@ -25,7 +25,8 @@ hodnoceni = [7, 9, 6, 7, 9, 8]
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :) 
+for h in hodnoceni:
+    print(f"{h}/10")
 ```
 
 </details>
@@ -57,7 +58,12 @@ hesla = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :) 
+for heslo in hesla:
+    print(heslo)
+
+for heslo in hesla:
+    if len(heslo) > 8:
+        print(heslo)
 ```
 
 </details>
@@ -89,7 +95,11 @@ mesice = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :) 
+for mesic in mesice:
+    print(mesic[0])
+
+for mesic in mesice:
+    print(mesic[1])
 ```
 
 </details>
@@ -101,7 +111,10 @@ Napište cyklus, který projde zadaný seznam desetinných čísel a spočítá 
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :) 
+soucet = sum(cisla)
+pocet = len(cisla)
+prumer = soucet / pocet
+print(f"Průměr: {prumer}")
 ```
 
 </details>
@@ -135,7 +148,17 @@ hry = [
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :) 
+for hra in hry:
+    print(hra[0])
+
+for hra in hry:
+    if hra[1] > 120:
+        print(hra[0])
+
+for hra in hry:
+    hodiny = hra[1] // 60
+    minuty = hra[1] % 60
+    print(f"{hra[0]} trvá {hodiny} hodin a {minuty} minut")
 ```
 
 </details>
