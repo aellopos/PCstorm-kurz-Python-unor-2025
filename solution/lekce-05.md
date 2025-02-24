@@ -8,7 +8,11 @@ Napiš funkci mult, která bude mít dva číselné parametry. Funkce oba parame
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+def mult(a, b):
+    return a * b
+
+vysledek = mult(4, 5)
+print(vysledek)
 ```
 
 </details>
@@ -22,7 +26,14 @@ Funkci vyzkoušej se zadáním dvou i jedné hodnoty, např. total_price(3), tot
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+def total_price(persons, breakfast=False):
+    cena = persons * 850
+    if breakfast:
+        cena += persons * 125
+    return cena
+
+print(total_price(3))
+print(total_price(2, True))
 ```
 
 </details>
@@ -36,7 +47,12 @@ Využij funkci z matematického modulu.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+import math
+
+def faktorial(n):
+    return math.factorial(n)
+
+print(faktorial(5))
 ```
 
 </details>
@@ -59,7 +75,14 @@ Bonus: Znak, kterým se má text obalit, bude zadán také jako parametr.
 <summary><b>Řešení</b></summary>
 
 ```python
-Tady zatím nic není :)
+def ramecek(text, znak='*'):
+    delka = len(text) + 4
+    print(znak * delka)
+    print(f"{znak} {text} {znak}")
+    print(znak * delka)
+
+ramecek("ahoj")
+ramecek("ahoj", "#")
 ```
 
 </details>
